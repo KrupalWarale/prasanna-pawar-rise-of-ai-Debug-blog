@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise of AI in Debugging</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
+
+
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <img src="images/logo.png" alt="logo">
+                <h2><span class="gradient">Rise of AI in Debugging</span></h2>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-bubbles">
+                    <div class="nav-bubble">Chapters</div>
+                    <div class="nav-bubble">About</div>
+                    <div class="nav-bubble">Topics</div>
+                </div>
+                <a href="https://github.com/krupalwarale" target="_blank" class="github-profile">
+                    <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile"
+                        class="profile-pic">
+                </a>
+            </div>
+        </header>
+
+
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video id="blackhole-original" class="blackhole-video active" autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
+            <video id="blackhole-cropped" class="blackhole-video" autoplay loop muted plays-inline src="videos/blackholeCrop.mp4"></video>
+        </div>
+
+        <section class="hero ">
+            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
+                <h1 data-aos="fade-right" data-aos-duration="3000">Exploring the <span class="gradient">Rise of
+                        AI</span> in <span class="gradient">Debugging</span></h1>
+
+                <p>Discover how artificial intelligence is transforming the way developers debug code, from automated
+                    error detection to intelligent code suggestions.</p>
+
+                <button>Start Reading</button>
+            </div>
+
+            <div class="skills-video-box ">
+                <video class="skills-video autoBlur" autoplay loop muted plays-inline
+                    src="videos/hero-video.mp4"></video>
+            </div>
+
+            <div class="scroll-down"></div>
+        </section>
+
+        <section class="timeline-section" id="about">
+            <h1 class="section-title" data-aos="fade-down" data-aos-duration="800" data-aos-delay="0">Rise of AI in
+                Debugging Timeline</h1>
+
+            <div class="timeline-container" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="timeline-line"></div>
+                
+                <!-- Traditional Era -->
+                <div class="timeline-item left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="timeline-era-label">TRADITIONAL ERA</div>
+                    <div class="timeline-date">2000-2009</div>
+                    <div class="timeline-card">
+                        <h3>Manual Debugging</h3>
+                        <p>Print statements, breakpoints, and basic IDE tools dominated debugging workflows.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Print Debugging</span>
+                            <span class="tag">Manual Breakpoints</span>
+                            <span class="tag">Basic IDEs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Static Analysis Era -->
+                <div class="timeline-item right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="timeline-era-label">STATIC ANALYSIS ERA</div>
+                    <div class="timeline-date">2010-2015</div>
+                    <div class="timeline-card">
+                        <h3>Rule-Based Detection</h3>
+                        <p>Automated tools began detecting patterns and potential issues using predefined rules.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Pattern Recognition</span>
+                            <span class="tag">Code Linting</span>
+                            <span class="tag">Rule Engines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML Era -->
+                <div class="timeline-item left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="timeline-era-label">MACHINE LEARNING ERA</div>
+                    <div class="timeline-date">2016-2020</div>
+                    <div class="timeline-card">
+                        <h3>Intelligent Analysis</h3>
+                        <p>Machine learning algorithms started providing predictive analysis and smart suggestions.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">ML Models</span>
+                            <span class="tag">Predictive Analysis</span>
+                            <span class="tag">Smart Suggestions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Era -->
+                <div class="timeline-item right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                    <div class="timeline-era-label">AI REVOLUTION ERA</div>
+                    <div class="timeline-date">2021-Present</div>
+                    <div class="timeline-card">
+                        <h3>Autonomous Debugging</h3>
+                        <p>AI-powered tools now provide real-time bug detection, auto-fixes, and intelligent code generation.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Auto-Fix</span>
+                            <span class="tag">Real-time Detection</span>
+                            <span class="tag">Code Generation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skills-section" id="topics">
+            <h1 class="section-title autoDisplay">
+                key topics
+            </h1>
+            <div class="skills-box autoDisplay">
+                <div class="topic-card top-left" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                    <h3>Machine Learning Algorithms</h3>
+                    <p>Deep learning models that analyze code patterns. Predict bugs and provide intelligent
+                        suggestions.</p>
+                </div>
+
+                <div class="topic-card top-right" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                    <h3>AI-Powered IDEs</h3>
+                    <p>Modern development environments with AI assistants. Real-time code analysis and intelligent
+                        debugging.</p>
+                </div>
+
+                <img class="skills-image" src="images/digital brain (2).png" alt="" data-aos="zoom-in"
+                    data-aos-duration="1500" data-aos-delay="300">
+
+                <div class="topic-card bottom-left" data-aos="fade-up-right" data-aos-duration="1200"
+                    data-aos-delay="600">
+                    <h3>Auto Bug Detection</h3>
+                    <p>AI systems identify runtime errors automatically. Catch memory leaks and security vulnerabilities
+                        early.</p>
+                </div>
+
+                <div class="topic-card bottom-right" data-aos="fade-up-left" data-aos-duration="1200"
+                    data-aos-delay="800">
+                    <h3>Predictive Code Analysis</h3>
+                    <p>AI predicts potential issues in your codebase. Suggests optimizations and prevents bugs
+                        proactively.</p>
+                </div>
+            </div>
+
+            <div class="slider" reverse="true" style="
+            --width: 100px;
+            --height: 100px;
+            --quantity: 9;
+            margin-top: 150px;
+            ">
+                <div class="list">
+                    <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+                    <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+                    <div class="item" style="--position: 3"><img src="images/3.webp" alt=""></div>
+                    <div class="item" style="--position: 4"><img src="images/4.webp" alt=""></div>
+                    <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+                    <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+                    <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+                    <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
+                    <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-project" id="chapters">
+            <h1 class="section-title autoDisplay">Book Chapters 📚</h1>
+            <div class="chapters-grid">
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter1.html'">
+                    <div class="chapter-number">01</div>
+                    <h3>Introduction to AI Debugging</h3>
+                    <p>Understanding the fundamentals of AI-powered debugging tools</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter2.html'">
+                    <div class="chapter-number">02</div>
+                    <h3>Traditional vs AI Debugging</h3>
+                    <p>Comparing conventional debugging methods with AI approaches</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter3.html'">
+                    <div class="chapter-number">03</div>
+                    <h3>Machine Learning in Error Detection</h3>
+                    <p>How ML algorithms identify and predict software bugs</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter4.html'">
+                    <div class="chapter-number">04</div>
+                    <h3>Natural Language Processing for Code</h3>
+                    <p>Using NLP to understand and analyze source code</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter5.html'">
+                    <div class="chapter-number">05</div>
+                    <h3>Automated Bug Fixing</h3>
+                    <p>AI systems that can automatically repair code defects</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter6.html'">
+                    <div class="chapter-number">06</div>
+                    <h3>Intelligent Code Suggestions</h3>
+                    <p>AI-powered recommendations for code improvements</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter7.html'">
+                    <div class="chapter-number">07</div>
+                    <h3>Pattern Recognition in Debugging</h3>
+                    <p>Identifying common bug patterns using AI algorithms</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter8.html'">
+                    <div class="chapter-number">08</div>
+                    <h3>Real-time Error Analysis</h3>
+                    <p>Live debugging assistance powered by artificial intelligence</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter9.html'">
+                    <div class="chapter-number">09</div>
+                    <h3>Deep Learning for Code Quality</h3>
+                    <p>Neural networks assessing and improving code quality</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter10.html'">
+                    <div class="chapter-number">10</div>
+                    <h3>AI-Powered Testing Strategies</h3>
+                    <p>Intelligent test generation and execution methods</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter11.html'">
+                    <div class="chapter-number">11</div>
+                    <h3>Predictive Debugging</h3>
+                    <p>Forecasting potential bugs before they occur</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter12.html'">
+                    <div class="chapter-number">12</div>
+                    <h3>Context-Aware Debugging</h3>
+                    <p>AI understanding code context for better debugging</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter13.html'">
+                    <div class="chapter-number">13</div>
+                    <h3>Multi-Language AI Debugging</h3>
+                    <p>Cross-platform debugging solutions using AI</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter14.html'">
+                    <div class="chapter-number">14</div>
+                    <h3>Performance Optimization with AI</h3>
+                    <p>Using AI to identify and fix performance bottlenecks</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter15.html'">
+                    <div class="chapter-number">15</div>
+                    <h3>Security Bug Detection</h3>
+                    <p>AI systems specialized in finding security vulnerabilities</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter16.html'">
+                    <div class="chapter-number">16</div>
+                    <h3>Collaborative AI Debugging</h3>
+                    <p>Team-based debugging enhanced by AI assistance</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter17.html'">
+                    <div class="chapter-number">17</div>
+                    <h3>AI Debugging in DevOps</h3>
+                    <p>Integrating AI debugging into CI/CD pipelines</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter18.html'">
+                    <div class="chapter-number">18</div>
+                    <h3>Visual Debugging with AI</h3>
+                    <p>AI-enhanced visual debugging interfaces and tools</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter19.html'">
+                    <div class="chapter-number">19</div>
+                    <h3>Mobile App Debugging AI</h3>
+                    <p>Specialized AI tools for mobile application debugging</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter20.html'">
+                    <div class="chapter-number">20</div>
+                    <h3>Web Development AI Debugging</h3>
+                    <p>AI debugging solutions for web applications</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter21.html'">
+                    <div class="chapter-number">21</div>
+                    <h3>Database Debugging with AI</h3>
+                    <p>AI-powered database query and performance debugging</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter22.html'">
+                    <div class="chapter-number">22</div>
+                    <h3>Cloud-Based AI Debugging</h3>
+                    <p>Scalable debugging solutions in cloud environments</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter23.html'">
+                    <div class="chapter-number">23</div>
+                    <h3>Future of AI Debugging</h3>
+                    <p>Emerging trends and future possibilities</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter24.html'">
+                    <div class="chapter-number">24</div>
+                    <h3>Case Studies and Success Stories</h3>
+                    <p>Real-world implementations of AI debugging tools</p>
+                </div>
+                <div class="chapter-card" onclick="window.location.href='chapters/chapter25.html'">
+                    <div class="chapter-number">25</div>
+                    <h3>Building Your AI Debugging Toolkit</h3>
+                    <p>Practical guide to implementing AI debugging solutions</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h1>©️2025, Rise of AI in Debugging</h1>
+                    <p class="footer-subtitle">Exploring the Future of Intelligent Code Analysis</p>
+                </div>
+                <div class="footer-center">
+                    <p class="created-by">Created by <span class="gradient">Krupal</span></p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/krupalwarale" target="_blank" class="github-profile footer-github">
+                        <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile"
+                            class="profile-pic">
+                        <span>@krupalwarale</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="database.js"></script>
+    <script src="app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 50,
+            delay: 0,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+
+</body>
+
+</html>
