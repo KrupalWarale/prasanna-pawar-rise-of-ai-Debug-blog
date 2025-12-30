@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Traditional vs AI Debugging - Rise of AI in Debugging</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../visual-content.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="../videos/galaxy.mp4"></video>
+
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video id="blackhole-original" class="blackhole-video active" autoplay loop muted plays-inline src="../videos/blackhole.mp4"></video>
+            <video id="blackhole-cropped" class="blackhole-video" autoplay loop muted plays-inline src="../videos/blackholeCrop.mp4"></video>
+        </div>
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <a href="../index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="../images/logo.png" alt="logo">
+                    <h2><span class="gradient">Rise of AI in Debugging</span></h2>
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <div class="nav-bubbles">
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#chapters'">Chapters</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#about'">About</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#topics'">Topics</div>
+                </div>
+                <a href="https://github.com/krupalwarale" target="_blank" class="github-profile">
+                    <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile"
+                        class="profile-pic">
+                </a>
+            </div>
+        </header>
+
+        <section class="chapter-content">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter 02</div>
+                <h1>Traditional vs AI Debugging</h1>
+                <p class="chapter-subtitle">Comparing conventional debugging methods with AI approaches</p>
+            </div>
+
+            <div class="chapter-body">
+                <p>Let's be honest - debugging used to be a nightmare. You'd get a cryptic error message, spend hours adding console.log statements everywhere, and pray you'd find the issue before your deadline. Sound familiar? Well, those days are numbered.</p>
+                
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Traditional vs Modern Debugging" class="content-image">
+                <div class="image-caption">Old school meets new school in debugging</div>
+                
+                <p>The way we debug code is changing fast. Traditional methods still work, but AI is making everything faster, smarter, and way less frustrating. Let's break down what's different and why it matters for your daily coding life.</p>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">The Old Way: Manual Detective Work</h3>
+                <p>Traditional debugging is like being a detective with a magnifying glass. You follow clues, make educated guesses, and hope you're on the right track. Here's what we've been doing for decades:</p>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">Classic Debugging Arsenal</div>
+                    <ul>
+                        <li><strong>Print Debugging:</strong> Sprinkling console.log everywhere like breadcrumbs</li>
+                        <li><strong>Breakpoints:</strong> Stopping time to peek inside your program</li>
+                        <li><strong>Log Files:</strong> Reading through endless text files for clues</li>
+                        <li><strong>Code Reviews:</strong> Having another human eyeball your code</li>
+                        <li><strong>Unit Tests:</strong> Writing tests to catch problems early</li>
+                    </ul>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">What Traditional Debugging Looks Like</h4>
+                <div class="code-block">
+<pre>
+// We've all written code like this
+function calculateTotal(items) {
+    console.log("Starting calculation..."); // Did we get here?
+    let total = 0;
+    
+    for (let i = 0; i < items.length; i++) {
+        console.log(`Item ${i}:`, items[i]); // What's in here?
+        total += items[i].price;
+        console.log(`Total so far: ${total}`); // Is math working?
+    }
+    
+    console.log("Final result:", total); // Did we survive?
+    return total;
+}
+</pre>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">The New Way: AI as Your Debugging Partner</h3>
+                <p>Now imagine having a super-smart assistant that's seen every type of bug imaginable. That's what AI debugging brings to the table. Instead of hunting for problems, they find you.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Faster Detection</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">70%</div>
+                        <div class="stat-label">Less Debug Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Pattern Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">60%</div>
+                        <div class="stat-label">Auto-Fix Success</div>
+                    </div>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">What AI Brings to Debugging</h4>
+                <div class="highlight-box">
+                    <div class="highlight-title">AI Superpowers</div>
+                    <ul>
+                        <li><strong>Predictive Analysis:</strong> Spots problems before they happen</li>
+                        <li><strong>Smart Suggestions:</strong> Offers actual solutions, not just error messages</li>
+                        <li><strong>Pattern Learning:</strong> Remembers every bug it's ever seen</li>
+                        <li><strong>Auto Testing:</strong> Creates tests you didn't think of</li>
+                        <li><strong>Root Cause Hunting:</strong> Traces problems to their source instantly</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Head-to-Head Comparison</h3>
+                
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>What We're Comparing</th>
+                            <th>Traditional Way</th>
+                            <th>AI Way</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Finding Bugs</strong></td>
+                            <td>Wait for users to report them</td>
+                            <td>Catch them before they escape</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Speed</strong></td>
+                            <td>Hours or days of investigation</td>
+                            <td>Minutes to identify and fix</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Accuracy</strong></td>
+                            <td>Depends on your coffee level</td>
+                            <td>Consistently sharp, never tired</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Learning</strong></td>
+                            <td>You get better over time</td>
+                            <td>Learns from millions of codebases</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scaling</strong></td>
+                            <td>More code = more headaches</td>
+                            <td>Handles massive codebases easily</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="info-box success">
+                    <div class="info-box-title">Real Talk: Netflix's Experience</div>
+                    <p>Netflix cut their debugging time by 60% using AI tools. Their system now fixes 70% of common issues automatically. That's like having a team of expert debuggers working 24/7 without coffee breaks.</p>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">The Best of Both Worlds</h3>
+                <p>Here's the thing - you don't have to choose sides. The smartest developers are combining traditional skills with AI tools. Think of it as upgrading from a bicycle to a motorcycle. You still need to know how to steer, but now you can go much faster.</p>
+                
+                <div class="comparison-table">
+                    <div class="comparison-column">
+                        <div class="comparison-title">What Humans Do Best</div>
+                        <ul class="comparison-list">
+                            <li>Creative problem solving</li>
+                            <li>Understanding business context</li>
+                            <li>Making judgment calls</li>
+                            <li>Thinking outside the box</li>
+                            <li>Communicating with users</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-column">
+                        <div class="comparison-title">What AI Does Best</div>
+                        <ul class="comparison-list">
+                            <li>Processing massive amounts of data</li>
+                            <li>Spotting subtle patterns</li>
+                            <li>Working around the clock</li>
+                            <li>Remembering everything</li>
+                            <li>Handling repetitive tasks</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">A Day in the Life</h3>
+                <p>Picture this: You're working on a feature when your AI debugging assistant notices something odd in your code. It flags a potential memory leak before you even run the program. When you do hit a bug later, it doesn't just tell you there's an error - it shows you exactly where the problem is and suggests three different ways to fix it.</p>
+                
+                <div class="video-container">
+                    <a href="https://www.youtube.com/results?search_query=traditional+vs+AI+debugging+comparison" target="_blank" style="text-decoration: none;">
+                        <div class="video-placeholder">
+                            <div class="video-title">Traditional vs AI Debugging Race</div>
+                            <div class="video-source">Click to watch: <span class="video-link">Real-time debugging comparison</span></div>
+                        </div>
+                    </a>
+                </div>
+                
+                <p>That's not science fiction - it's happening right now in development teams around the world. The question isn't whether AI will change debugging, but how quickly you'll adapt to use it.</p>
+                
+                <div class="info-box">
+                    <div class="info-box-title">Bottom Line</div>
+                    <p>Traditional debugging taught us to think like detectives. AI debugging lets us think like architects - building better code from the start instead of just fixing what breaks.</p>
+                </div>
+                
+                <p>Ready to see how machine learning makes this magic happen? Next up, we'll dive into the algorithms that power AI debugging and how they learn to spot bugs better than any human ever could.</p>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="chapter1.html" class="nav-btn prev">
+                    <span>← Previous Chapter</span>
+                </a>
+                <a href="../index.html" class="nav-btn home">
+                    <span>🏠 Home</span>
+                </a>
+                <a href="chapter3.html" class="nav-btn next">
+                    <span>Next Chapter →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h1>©️2025, Rise of AI in Debugging</h1>
+                    <p class="footer-subtitle">Exploring the Future of Intelligent Code Analysis</p>
+                </div>
+                <div class="footer-center">
+                    <p class="created-by">Created by <span class="gradient">Krupal</span></p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/krupalwarale" target="_blank" class="github-profile footer-github">
+                        <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile"
+                            class="profile-pic">
+                        <span>@krupalwarale</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../database.js"></script>
+    <script src="../interactions.js"></script>
+    <script src="chapter-app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 50,
+            delay: 0,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+</body>
+</html>

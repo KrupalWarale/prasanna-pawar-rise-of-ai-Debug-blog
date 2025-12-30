@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Automated Bug Fixing - Rise of AI in Debugging</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../visual-content.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="../videos/galaxy.mp4"></video>
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video id="blackhole-original" class="blackhole-video active" autoplay loop muted plays-inline src="../videos/blackhole.mp4"></video>
+            <video id="blackhole-cropped" class="blackhole-video" autoplay loop muted plays-inline src="../videos/blackholeCrop.mp4"></video>
+        </div>
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <a href="../index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="../images/logo.png" alt="logo">
+                    <h2><span class="gradient">Rise of AI in Debugging</span></h2>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-bubbles">
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#chapters'">Chapters</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#about'">About</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#topics'">Topics</div>
+                </div>
+                <a href="https://github.com/krupalwarale" target="_blank" class="github-profile">
+                    <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile" class="profile-pic">
+                </a>
+            </div>
+        </header>
+
+        <section class="chapter-content">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter 05</div>
+                <h1>Automated Bug Fixing</h1>
+                <p class="chapter-subtitle">AI systems that can automatically repair code defects</p>
+            </div>
+
+            <div class="chapter-body">
+                <p>Imagine coming back from lunch to find that your AI assistant has already fixed three bugs in your code, run the tests, and is waiting for your approval to commit the changes. Sound too good to be true? It's happening right now in development teams around the world.</p>
+                
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Automated Systems" class="content-image">
+                <div class="image-caption">AI systems working around the clock to fix code</div>
+                
+                <p>Automated bug fixing is the holy grail of debugging - systems that don't just find problems, but actually solve them. We're not talking about simple find-and-replace operations, but intelligent fixes that understand context, maintain code style, and preserve functionality.</p>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">How Auto-Fixing Actually Works</h3>
+                <p>Think of automated bug fixing like having a really experienced developer who's seen every type of bug thousands of times. When they spot a familiar pattern, they know exactly how to fix it.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">68%</div>
+                        <div class="stat-label">Bugs Fixed Automatically</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15min</div>
+                        <div class="stat-label">Average Fix Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Fix Success Rate</div>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">The Auto-Fix Process</div>
+                    <ul>
+                        <li><strong>Bug Detection:</strong> AI identifies the specific type and location of the bug</li>
+                        <li><strong>Pattern Matching:</strong> Compares against known fix patterns from training data</li>
+                        <li><strong>Context Analysis:</strong> Understands surrounding code and dependencies</li>
+                        <li><strong>Fix Generation:</strong> Creates multiple potential solutions</li>
+                        <li><strong>Validation:</strong> Tests fixes to ensure they work correctly</li>
+                        <li><strong>Style Preservation:</strong> Maintains your coding style and conventions</li>
+                    </ul>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Types of Bugs AI Can Fix</h3>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Simple Syntax Fixes</h4>
+                <p>These are the low-hanging fruit - missing semicolons, unmatched brackets, typos in variable names. AI handles these instantly.</p>
+                
+                <div class="code-block">
+<pre>
+// Before: AI detects missing semicolon and typo
+function calculateTax(amount) {
+    let taxRate = 0.08
+    return amount * taxRat  // typo in variable name
+}
+
+// After: AI fixes both issues automatically
+function calculateTax(amount) {
+    let taxRate = 0.08;
+    return amount * taxRate;
+}
+</pre>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Logic Error Corrections</h4>
+                <p>More complex fixes that require understanding what the code is supposed to do.</p>
+                
+                <div class="code-block">
+<pre>
+// Before: Off-by-one error in loop
+for (let i = 0; i <= array.length; i++) {
+    console.log(array[i]); // Will crash on last iteration
+}
+
+// After: AI recognizes pattern and fixes boundary
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
+</pre>
+                </div>
+                
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Bug Type</th>
+                            <th>Fix Success Rate</th>
+                            <th>Complexity Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Syntax Errors</strong></td>
+                            <td>98%</td>
+                            <td>Low</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Null Pointer Exceptions</strong></td>
+                            <td>85%</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Memory Leaks</strong></td>
+                            <td>72%</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Race Conditions</strong></td>
+                            <td>45%</td>
+                            <td>Very High</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Real-World Auto-Fix Examples</h3>
+                
+                <div class="info-box success">
+                    <div class="info-box-title">Microsoft's IntelliCode</div>
+                    <p>Microsoft's AI can automatically fix common C# and Python bugs. It's integrated into Visual Studio and has fixed over 2 million bugs in production codebases without breaking existing functionality.</p>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Security Vulnerability Fixes</h4>
+                <p>AI is getting really good at spotting and fixing security issues automatically. It can add input validation, fix SQL injection vulnerabilities, and patch XSS holes.</p>
+                
+                <div class="comparison-table">
+                    <div class="comparison-column">
+                        <div class="comparison-title">Vulnerable Code</div>
+                        <ul class="comparison-list">
+                            <li>Direct database queries with user input</li>
+                            <li>Unvalidated form data</li>
+                            <li>Hardcoded passwords</li>
+                            <li>Insecure random number generation</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-column">
+                        <div class="comparison-title">AI-Generated Fixes</div>
+                        <ul class="comparison-list">
+                            <li>Parameterized queries and prepared statements</li>
+                            <li>Input sanitization and validation</li>
+                            <li>Environment variable usage</li>
+                            <li>Cryptographically secure random functions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">The Fix Generation Process</h3>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Analysis Phase</div>
+                    <p>AI analyzes the buggy code, understanding its purpose, dependencies, and the specific nature of the problem.</p>
+                </div>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Solution Search</div>
+                    <p>The system searches through millions of similar fixes from its training data to find the best approach.</p>
+                </div>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Code Generation</div>
+                    <p>Multiple fix candidates are generated, each preserving the original intent while solving the bug.</p>
+                </div>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Testing & Validation</div>
+                    <p>Each fix is tested against existing test suites and validated for correctness before being presented.</p>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Advanced Auto-Fix Techniques</h3>
+                
+                <div class="chart-container">
+                    <div class="chart-title">Auto-Fix Confidence Levels</div>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <div style="margin: 10px 0;">High Confidence (Auto-Apply)</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 35%;">
+                                <div class="progress-label">35% of Fixes</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 10px 0;">Medium Confidence (Suggest)</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%;">
+                                <div class="progress-label">45% of Fixes</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 10px 0;">Low Confidence (Flag Only)</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%;">
+                                <div class="progress-label">20% of Fixes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Multi-Step Fixes</h4>
+                <p>Sometimes fixing one bug requires changes in multiple files. Advanced AI systems can coordinate these complex, multi-step repairs while ensuring everything still works together.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        Demo: AI Fixing Bugs in Real-Time
+                        <div class="video-source">Watch automated fixes being applied live</div>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Human-AI Collaboration</h3>
+                <p>The best auto-fix systems don't replace developers - they work with them. AI handles the routine fixes while humans focus on complex logic and architectural decisions.</p>
+                
+                <div class="info-box">
+                    <div class="info-box-title">Smart Workflow</div>
+                    <p>Modern AI systems categorize fixes by confidence level. High-confidence fixes (like syntax errors) get applied automatically, while complex fixes are suggested for human review.</p>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Learning from Feedback</h4>
+                <p>When developers accept or reject AI-generated fixes, the system learns and gets better. It's like having a junior developer who learns from every code review.</p>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Challenges and Limitations</h3>
+                <p>Auto-fixing isn't perfect. Sometimes AI generates fixes that work but aren't optimal, or it might miss the bigger picture of what the code is trying to achieve.</p>
+                
+                <div class="info-box warning">
+                    <div class="info-box-title">Use With Caution</div>
+                    <p>Always review auto-generated fixes, especially for critical systems. AI is great at fixing common patterns but might miss domain-specific requirements or business logic constraints.</p>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">The Future of Self-Healing Code</h3>
+                <p>We're moving toward systems that can fix themselves. Imagine production code that detects issues and patches them automatically, with human oversight for major changes. It's not science fiction - it's the next logical step.</p>
+                
+                <div class="info-box">
+                    <div class="info-box-title">Coming Next</div>
+                    <p>Automated fixing is just the beginning. Next, we'll explore how AI provides intelligent code suggestions that help prevent bugs from happening in the first place.</p>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="chapter4.html" class="nav-btn prev">
+                    <span>← Previous Chapter</span>
+                </a>
+                <a href="../index.html" class="nav-btn home">
+                    <span>🏠 Home</span>
+                </a>
+                <a href="chapter6.html" class="nav-btn next">
+                    <span>Next Chapter →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h1>©️2025, Rise of AI in Debugging</h1>
+                    <p class="footer-subtitle">Exploring the Future of Intelligent Code Analysis</p>
+                </div>
+                <div class="footer-center">
+                    <p class="created-by">Created by <span class="gradient">Krupal</span></p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/krupalwarale" target="_blank" class="github-profile footer-github">
+                        <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile" class="profile-pic">
+                        <span>@krupalwarale</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../database.js"></script>
+    <script src="../interactions.js"></script>
+    <script src="chapter-app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 50,
+            delay: 0,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+</body>
+</html>

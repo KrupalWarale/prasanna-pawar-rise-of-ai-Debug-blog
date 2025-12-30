@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15: Security Bug Detection - Rise of AI in Debugging</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../visual-content.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="../videos/galaxy.mp4"></video>
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video id="blackhole-original" class="blackhole-video active" autoplay loop muted plays-inline src="../videos/blackhole.mp4"></video>
+            <video id="blackhole-cropped" class="blackhole-video" autoplay loop muted plays-inline src="../videos/blackholeCrop.mp4"></video>
+        </div>
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <a href="../index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="../images/logo.png" alt="logo">
+                    <h2><span class="gradient">Rise of AI in Debugging</span></h2>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-bubbles">
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#chapters'">Chapters</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#about'">About</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#topics'">Topics</div>
+                </div>
+                <a href="https://github.com/krupalwarale" target="_blank" class="github-profile">
+                    <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile" class="profile-pic">
+                </a>
+            </div>
+        </header>
+
+        <section class="chapter-content">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter 15</div>
+                <h1>Security Bug Detection</h1>
+                <p class="chapter-subtitle">AI systems specialized in finding security vulnerabilities</p>
+            </div>
+
+            <div class="chapter-body">
+                <p>Security bugs are the worst kind of bugs. They don't crash your app or slow it down - they silently let attackers in. Traditional security testing catches obvious vulnerabilities, but AI security analysis thinks like a hacker, finding the subtle flaws that humans miss.</p>
+                
+                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Security Analysis" class="content-image">
+                <div class="image-caption">AI systems scanning code for security vulnerabilities</div>
+                
+                <p>AI security debugging is like having a white-hat hacker on your team 24/7. It constantly probes your code, looking for weaknesses, testing attack vectors, and thinking of ways malicious actors might exploit your application.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">89%</div>
+                        <div class="stat-label">Security Vulnerabilities Detected</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">75%</div>
+                        <div class="stat-label">Reduction in False Positives</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50%</div>
+                        <div class="stat-label">Faster Security Reviews</div>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Common Security Vulnerabilities AI Catches</h3>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">AI Security Detection</div>
+                    <ul>
+                        <li><strong>SQL Injection:</strong> Identifies unsafe database query construction</li>
+                        <li><strong>XSS Vulnerabilities:</strong> Finds unescaped user input in web apps</li>
+                        <li><strong>Authentication Flaws:</strong> Spots weak password policies and session management</li>
+                        <li><strong>Data Exposure:</strong> Detects sensitive information leaks</li>
+                        <li><strong>Access Control Issues:</strong> Finds authorization bypass opportunities</li>
+                    </ul>
+                </div>
+                
+                <div class="code-block">
+<pre>
+// AI detects SQL injection vulnerability
+function getUser(userId) {
+    // DANGER: Direct string concatenation
+    const query = `SELECT * FROM users WHERE id = ${userId}`;
+    return database.query(query);
+}
+
+// AI suggests secure alternative
+function getUser(userId) {
+    // SAFE: Parameterized query
+    const query = 'SELECT * FROM users WHERE id = ?';
+    return database.query(query, [userId]);
+}
+</pre>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Advanced Threat Detection</h3>
+                <p>AI doesn't just look for known vulnerability patterns - it can identify novel attack vectors by understanding how different parts of your application interact and where trust boundaries exist.</p>
+                
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Vulnerability Type</th>
+                            <th>Traditional Detection</th>
+                            <th>AI Detection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Buffer Overflows</strong></td>
+                            <td>Static analysis rules</td>
+                            <td>Dynamic flow analysis and bounds checking</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Race Conditions</strong></td>
+                            <td>Manual code review</td>
+                            <td>Concurrent execution modeling</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Logic Flaws</strong></td>
+                            <td>Penetration testing</td>
+                            <td>Business logic analysis and flow validation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cryptographic Issues</strong></td>
+                            <td>Checklist validation</td>
+                            <td>Algorithm strength analysis and implementation review</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="info-box success">
+                    <div class="info-box-title">GitHub's Security AI</div>
+                    <p>GitHub's CodeQL uses AI to find security vulnerabilities across millions of repositories. It has discovered over 100,000 security issues, including critical vulnerabilities in major open-source projects that had been missed for years.</p>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Behavioral Security Analysis</h3>
+                <p>AI can learn normal application behavior and detect when something unusual happens - like a user suddenly accessing data they've never touched before, or API calls coming from unexpected locations.</p>
+                
+                <div class="comparison-table">
+                    <div class="comparison-column">
+                        <div class="comparison-title">Traditional Security</div>
+                        <ul class="comparison-list">
+                            <li>Rule-based detection</li>
+                            <li>Known vulnerability patterns</li>
+                            <li>Periodic security scans</li>
+                            <li>Manual penetration testing</li>
+                            <li>Reactive incident response</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-column">
+                        <div class="comparison-title">AI Security</div>
+                        <ul class="comparison-list">
+                            <li>Behavioral anomaly detection</li>
+                            <li>Novel vulnerability discovery</li>
+                            <li>Continuous monitoring</li>
+                            <li>Automated threat modeling</li>
+                            <li>Proactive threat prevention</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Real-Time Threat Detection</h3>
+                <p>AI security systems don't just scan code - they monitor running applications, watching for suspicious patterns, unusual data access, and potential attack attempts in real-time.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        Demo: AI Security Scanning in Action
+                        <div class="video-source">Watch AI identify and prevent security vulnerabilities</div>
+                    </div>
+                </div>
+                
+                <div class="info-box warning">
+                    <div class="info-box-title">Security vs Usability</div>
+                    <p>AI helps balance security with usability by understanding user behavior patterns. It can distinguish between legitimate unusual activity and potential security threats, reducing false alarms while maintaining protection.</p>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-box-title">Next Chapter</div>
+                    <p>Security AI protects your code from attackers, but what about protecting your development process? Next, we'll explore how AI enhances collaborative debugging in team environments.</p>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="chapter14.html" class="nav-btn prev">
+                    <span>← Previous Chapter</span>
+                </a>
+                <a href="../index.html" class="nav-btn home">
+                    <span>🏠 Home</span>
+                </a>
+                <a href="chapter16.html" class="nav-btn next">
+                    <span>Next Chapter →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h1>©️2025, Rise of AI in Debugging</h1>
+                    <p class="footer-subtitle">Exploring the Future of Intelligent Code Analysis</p>
+                </div>
+                <div class="footer-center">
+                    <p class="created-by">Created by <span class="gradient">Krupal</span></p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/krupalwarale" target="_blank" class="github-profile footer-github">
+                        <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile" class="profile-pic">
+                        <span>@krupalwarale</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../database.js"></script>
+    <script src="../interactions.js"></script>
+    <script src="chapter-app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 50,
+            delay: 0,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+</body>
+</html>

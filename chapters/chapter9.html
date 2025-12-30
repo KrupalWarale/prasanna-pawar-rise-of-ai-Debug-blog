@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9: Deep Learning for Code Quality - Rise of AI in Debugging</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../visual-content.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="../videos/galaxy.mp4"></video>
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video id="blackhole-original" class="blackhole-video active" autoplay loop muted plays-inline src="../videos/blackhole.mp4"></video>
+            <video id="blackhole-cropped" class="blackhole-video" autoplay loop muted plays-inline src="../videos/blackholeCrop.mp4"></video>
+        </div>
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <a href="../index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="../images/logo.png" alt="logo">
+                    <h2><span class="gradient">Rise of AI in Debugging</span></h2>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-bubbles">
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#chapters'">Chapters</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#about'">About</div>
+                    <div class="nav-bubble" onclick="window.location.href='../index.html#topics'">Topics</div>
+                </div>
+                <a href="https://github.com/krupalwarale" target="_blank" class="github-profile">
+                    <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile" class="profile-pic">
+                </a>
+            </div>
+        </header>
+
+        <section class="chapter-content">
+            <div class="chapter-header">
+                <div class="chapter-number">Chapter 09</div>
+                <h1>Deep Learning for Code Quality</h1>
+                <p class="chapter-subtitle">Neural networks assessing and improving code quality</p>
+            </div>
+
+            <div class="chapter-body">
+                <p>Deep learning is like giving AI a brain that can understand code the way humans do - seeing patterns, understanding context, and making connections across vast amounts of information. When applied to code quality, it's revolutionary.</p>
+                
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Neural Networks" class="content-image">
+                <div class="image-caption">Deep neural networks analyzing code structure and quality</div>
+                
+                <p>While traditional tools check for specific rules, deep learning models understand the subtle qualities that make code maintainable, readable, and robust. They've learned from millions of examples of both great and terrible code.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50M+</div>
+                        <div class="stat-label">Code Examples Trained On</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">94%</div>
+                        <div class="stat-label">Quality Assessment Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Quality Dimensions Analyzed</div>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">What Makes Code Quality?</h3>
+                <p>Code quality isn't just about whether it works - it's about readability, maintainability, performance, security, and dozens of other factors. Deep learning can evaluate all of these simultaneously.</p>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">Quality Dimensions Deep Learning Evaluates</div>
+                    <ul>
+                        <li><strong>Readability:</strong> How easy is the code to understand?</li>
+                        <li><strong>Maintainability:</strong> How easy will it be to modify later?</li>
+                        <li><strong>Performance:</strong> How efficiently does it use resources?</li>
+                        <li><strong>Security:</strong> Are there potential vulnerabilities?</li>
+                        <li><strong>Testability:</strong> How easy is it to write tests for?</li>
+                        <li><strong>Reusability:</strong> Can parts be used elsewhere?</li>
+                    </ul>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Beyond Simple Metrics</h4>
+                <p>Traditional quality tools count lines of code or cyclomatic complexity. Deep learning understands the story your code tells and whether it's a good story.</p>
+                
+                <div class="code-block">
+<pre>
+// Traditional tools see: 5 lines, low complexity
+// Deep learning sees: Poor naming, unclear intent, potential bugs
+function calc(x, y) {
+    var z = x * y;
+    if (z > 100) z = 100;
+    return z;
+}
+
+// Deep learning prefers: Clear intent, good naming, documented behavior
+function calculateDiscountedPrice(originalPrice, discountRate) {
+    const discountedPrice = originalPrice * discountRate;
+    const maxDiscount = 100;
+    return Math.min(discountedPrice, maxDiscount);
+}
+</pre>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">How Neural Networks Learn Code Quality</h3>
+                <p>Training a neural network to understand code quality is like teaching someone to be a code reviewer by showing them millions of examples of good and bad code, along with expert feedback.</p>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Data Collection</div>
+                    <p>Gather millions of code samples with quality ratings from experienced developers and automated analysis tools.</p>
+                </div>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Feature Learning</div>
+                    <p>The network learns to identify features that correlate with high-quality code - naming patterns, structure, documentation style.</p>
+                </div>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Pattern Recognition</div>
+                    <p>Deep layers learn complex patterns that combine multiple features to assess overall quality.</p>
+                </div>
+                
+                <div class="timeline-item-content">
+                    <div class="timeline-year">Quality Prediction</div>
+                    <p>The trained model can now evaluate new code and predict its quality across multiple dimensions.</p>
+                </div>
+                
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Network Architecture</th>
+                            <th>Best For</th>
+                            <th>Accuracy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Convolutional Neural Networks</strong></td>
+                            <td>Code structure and syntax patterns</td>
+                            <td>89%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recurrent Neural Networks</strong></td>
+                            <td>Sequential code flow and dependencies</td>
+                            <td>92%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transformer Models</strong></td>
+                            <td>Long-range code relationships</td>
+                            <td>96%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Graph Neural Networks</strong></td>
+                            <td>Code dependency graphs</td>
+                            <td>88%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Real-World Applications</h3>
+                
+                <div class="info-box success">
+                    <div class="info-box-title">Google's Code Quality AI</div>
+                    <p>Google uses deep learning models to automatically review code quality in their massive codebase. The system has learned from years of human code reviews and can now spot quality issues that even experienced developers might miss.</p>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Automated Code Reviews</h4>
+                <p>Deep learning models can perform initial code reviews, flagging potential issues and suggesting improvements before human reviewers even look at the code.</p>
+                
+                <div class="comparison-table">
+                    <div class="comparison-column">
+                        <div class="comparison-title">Human Code Review Focus</div>
+                        <ul class="comparison-list">
+                            <li>Business logic correctness</li>
+                            <li>Architectural decisions</li>
+                            <li>Domain-specific requirements</li>
+                            <li>Creative problem-solving</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-column">
+                        <div class="comparison-title">AI Code Review Focus</div>
+                        <ul class="comparison-list">
+                            <li>Code style and consistency</li>
+                            <li>Common bug patterns</li>
+                            <li>Performance optimizations</li>
+                            <li>Security vulnerabilities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Quality Improvement Suggestions</h3>
+                <p>Deep learning doesn't just identify problems - it suggests specific improvements. It's learned from millions of before-and-after examples of code being improved.</p>
+                
+                <div class="chart-container">
+                    <div class="chart-title">Types of Quality Improvements Suggested</div>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <div style="margin: 10px 0;">Naming Improvements</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 35%;">
+                                <div class="progress-label">35%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 10px 0;">Structure Refactoring</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%;">
+                                <div class="progress-label">25%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 10px 0;">Performance Optimizations</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%;">
+                                <div class="progress-label">20%</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 10px 0;">Documentation Additions</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%;">
+                                <div class="progress-label">20%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Learning Team Preferences</h4>
+                <p>Advanced systems learn your team's specific quality preferences. If your team prefers functional programming patterns, the AI adapts its suggestions accordingly.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        Watch: Deep Learning Code Quality Assessment
+                        <div class="video-source">See neural networks evaluate code in real-time</div>
+                    </div>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Multi-Language Quality Assessment</h3>
+                <p>Deep learning models can understand quality principles that apply across programming languages. Good naming conventions in Python are similar to good naming in Java, even though the syntax differs.</p>
+                
+                <div class="info-box">
+                    <div class="info-box-title">Cross-Language Learning</div>
+                    <p>Models trained on multiple languages can transfer quality insights between them. A pattern learned from high-quality Python code can inform quality assessment in JavaScript.</p>
+                </div>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">Challenges in Deep Learning for Code Quality</h3>
+                <p>Quality is subjective - what one developer considers clean code, another might find overly verbose. Deep learning models need to balance different perspectives and coding philosophies.</p>
+                
+                <div class="info-box warning">
+                    <div class="info-box-title">Balancing Perspectives</div>
+                    <p>The best models learn to recognize different valid coding styles rather than enforcing a single "correct" approach. They suggest improvements while respecting team preferences and project constraints.</p>
+                </div>
+                
+                <h4 style="color: #72a1de; margin-top: 30px;">Continuous Learning and Adaptation</h4>
+                <p>As coding practices evolve, deep learning models need to adapt. New frameworks, languages, and best practices require continuous model updates and retraining.</p>
+                
+                <h3 style="color: #72a1de; margin-top: 40px;">The Future of AI-Driven Quality</h3>
+                <p>We're moving toward AI that can understand not just code quality, but code elegance - the difference between code that works and code that's beautiful. Future models might even suggest entirely different approaches to solving problems.</p>
+                
+                <div class="info-box">
+                    <div class="info-box-title">Next Chapter</div>
+                    <p>Deep learning helps us write better code. But what about generating better tests? Next, we'll explore how AI is revolutionizing testing strategies and test generation.</p>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="chapter8.html" class="nav-btn prev">
+                    <span>← Previous Chapter</span>
+                </a>
+                <a href="../index.html" class="nav-btn home">
+                    <span>🏠 Home</span>
+                </a>
+                <a href="chapter10.html" class="nav-btn next">
+                    <span>Next Chapter →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h1>©️2025, Rise of AI in Debugging</h1>
+                    <p class="footer-subtitle">Exploring the Future of Intelligent Code Analysis</p>
+                </div>
+                <div class="footer-center">
+                    <p class="created-by">Created by <span class="gradient">Krupal</span></p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://github.com/krupalwarale" target="_blank" class="github-profile footer-github">
+                        <img src="https://github.com/krupalwarale.png" alt="Krupal Warale GitHub Profile" class="profile-pic">
+                        <span>@krupalwarale</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../database.js"></script>
+    <script src="../interactions.js"></script>
+    <script src="chapter-app.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-cubic',
+            once: false,
+            mirror: true,
+            offset: 50,
+            delay: 0,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+</body>
+</html>
