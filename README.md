@@ -38,10 +38,7 @@ A modern web project exploring the evolution and future of AI-powered debugging 
 - Vanilla JavaScript
 - AOS (Animate On Scroll) library
 
-## Author
 
-
-Created by Krupal Warale
 
 
 
